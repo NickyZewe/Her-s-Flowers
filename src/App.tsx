@@ -1,31 +1,12 @@
+import { VStack } from "@chakra-ui/react";
 import "./App.css";
-import { Grid, GridItem } from "@chakra-ui/react";
-import NavBar from "./components/NavBar";
+import Body from "./components/Body";
 
 function App() {
   return (
-    <Grid
-      templateAreas={`"header header"
-                    "main main"
-                    "footer footer"`}
-      gridTemplateRows={"50px 1fr 30px"}
-      gridTemplateColumns={"150px 1fr"}
-      h="200px"
-      gap="1"
-      color="blackAlpha.700"
-      fontWeight="bold"
-    >
-      <GridItem pl="2" bg="teal.300" area={"header"}>
-        <NavBar />
-      </GridItem>
-
-      <GridItem pl="2" bg="green.300" area={"main"}>
-        Main
-      </GridItem>
-      <GridItem pl="2" bg="blue.300" area={"footer"}>
-        Footer
-      </GridItem>
-    </Grid>
+    <VStack padding={5} direction="column" alignItems="center">
+      <Body />
+    </VStack>
   );
 }
 
