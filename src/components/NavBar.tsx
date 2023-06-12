@@ -22,11 +22,10 @@ const NavBar = () => {
             Actions
           </MenuButton>
           <MenuList color="gray.50">
-            <MenuItem>Gallery</MenuItem>
             <MenuItem>Shop</MenuItem>
-            <MenuItem>Contact Us</MenuItem>
-            <MenuItem>Delete</MenuItem>
-            <MenuItem>Attend a Workshop</MenuItem>
+            <MenuItem>Gallery</MenuItem>
+            <MenuItem>Inquire About an Event</MenuItem>
+            <MenuItem>Get To Know Her's</MenuItem>
           </MenuList>
         </Menu>
       </Box>

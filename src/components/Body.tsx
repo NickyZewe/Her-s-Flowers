@@ -1,5 +1,9 @@
 import { Grid, GridItem } from "@chakra-ui/react";
+import ShopSection from "./home-body/ShopSection";
 import NavBar from "./NavBar";
+import GallerySection from "./home-body/GallerySection";
+import AboutSection from "./home-body/AboutSection";
+import EventSection from "./home-body/EventSection";
 
 const Body = () => {
   return (
@@ -20,6 +24,10 @@ const Body = () => {
 
       <GridItem pl="2" bg="green.300" area={"main"}>
         Main
+        <ShopSection />
+        <GallerySection />
+        <EventSection />
+        <AboutSection />
       </GridItem>
       <GridItem pl="2" bg="blue.300" area={"footer"}>
         Footer
