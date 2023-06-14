@@ -21,9 +21,28 @@ const ShopSection = () => {
       py={{ base: "0", lg: "12" }}
     >
       <Stack
-        direction={{ base: "column-reverse", lg: "row" }}
+        direction={{ base: "column", lg: "row-reverse" }}
         spacing={{ base: "0", lg: "20" }}
       >
+        <Flex flex="1" overflow="hidden">
+          <Image
+            src="https://images.unsplash.com/photo-1589156229687-496a31ad1d1f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=772&q=80"
+            alt="Lovely Image"
+            fallback={<Skeleton />}
+            maxH="450px"
+            minW="300px"
+            objectFit="cover"
+            flex="1"
+          />
+          <Image
+            display={{ base: "none", sm: "initial" }}
+            src="https://images.unsplash.com/photo-1589156206699-bc21e38c8a7d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=772&q=80"
+            alt="Lovely Image"
+            fallback={<Skeleton />}
+            maxH="450px"
+            objectFit="cover"
+          />
+        </Flex>
         <Box
           width={{ lg: "sm" }}
           transform={{ base: "translateY(-50%)", lg: "none" }}
@@ -62,25 +81,6 @@ const ShopSection = () => {
             </HStack>
           </Stack>
         </Box>
-        <Flex flex="1" overflow="hidden">
-          <Image
-            src="https://images.unsplash.com/photo-1589156229687-496a31ad1d1f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=772&q=80"
-            alt="Lovely Image"
-            fallback={<Skeleton />}
-            maxH="450px"
-            minW="300px"
-            objectFit="cover"
-            flex="1"
-          />
-          <Image
-            display={{ base: "none", sm: "initial" }}
-            src="https://images.unsplash.com/photo-1589156206699-bc21e38c8a7d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=772&q=80"
-            alt="Lovely Image"
-            fallback={<Skeleton />}
-            maxH="450px"
-            objectFit="cover"
-          />
-        </Flex>
       </Stack>
     </Box>
   );

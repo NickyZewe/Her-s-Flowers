@@ -12,11 +12,10 @@ const HomePage = () => {
                     "footer footer"`}
       templateRows={"50px 1fr 30px"}
       templateColumns={"150px 1fr"}
-      gap={6}
+      gap={1}
       fontWeight="bold"
     >
-      <GridItem pl="2" bg="green.300" area={"main"}>
-        Main
+      <GridItem pl="2" area={"main"}>
         <ShopSection />
         <GallerySection />
         <EventSection />
