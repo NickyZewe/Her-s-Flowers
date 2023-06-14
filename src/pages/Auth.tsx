@@ -22,6 +22,7 @@ const Auth = () => {
       maxW="lg"
       py={{ base: "12", md: "24" }}
       px={{ base: "0", sm: "8" }}
+      background={""}
     >
       <Stack spacing="8">
         <Stack spacing="6">
@@ -44,6 +45,8 @@ const Auth = () => {
           bg={{ base: "transparent", sm: "bg.surface" }}
           boxShadow={{ base: "none", sm: "md" }}
           borderRadius={{ base: "none", sm: "xl" }}
+          color={"blue.300"}
+          background={"grey.100"}
         >
           <Stack spacing="6">
             <Stack spacing="5">
