@@ -4,48 +4,56 @@ import {
   Flex,
   Heading,
   IconButton,
-  Link,
   Menu,
+  Link,
   MenuButton,
   MenuItem,
   MenuList,
   Spacer,
 } from "@chakra-ui/react";
 import { FaInstagram } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
 
 const NavBar = () => {
   return (
-    <Flex p={2}>
-      <Box>
-        <Menu>
-          <MenuButton as={IconButton} icon={<HamburgerIcon />} color="gray.50">
-            Actions
-          </MenuButton>
-          <MenuList color="gray.50">
+    <Flex p={5} h="1fr" overflow={"hidden"}>
+      <Menu>
+        <MenuButton as={IconButton} icon={<HamburgerIcon />} color="gray.50" />
+
+        <MenuList color="gray.50">
+          <NavLink to={"/"}>
+            <MenuItem>Home</MenuItem>
+          </NavLink>
+          <NavLink to={"/shop"}>
             <MenuItem>Shop</MenuItem>
+          </NavLink>
+          <NavLink to={"/gallery"}>
             <MenuItem>Gallery</MenuItem>
+          </NavLink>
+          <NavLink to={"/events"}>
             <MenuItem>Inquire About an Event</MenuItem>
+          </NavLink>
+          <NavLink to={"/about"}>
             <MenuItem>Get To Know Her's</MenuItem>
-          </MenuList>
-        </Menu>
-      </Box>
+          </NavLink>
+        </MenuList>
+      </Menu>
+
       <Spacer />
       <Heading as="h3" size="lg" color="gray.50" paddingInline={2}>
-        {" "}
-        Her's Floral Design{" "}
+        Her's Floral Design
       </Heading>
       <Spacer />
-      <Box>
-        <Link href="https://www.instagram.com/hersfloraldesign/" isExternal>
-          <IconButton
-            ml={2}
-            aria-label="Instagram Link"
-            color="gray.50"
-            isRound
-            icon={<FaInstagram />}
-          ></IconButton>
-        </Link>
-      </Box>
+
+      <Link href="https://www.instagram.com/hersfloraldesign/" isExternal>
+        <IconButton
+          ml={2}
+          aria-label="Instagram Link"
+          color="gray.50"
+          isRound
+          icon={<FaInstagram />}
+        ></IconButton>
+      </Link>
     </Flex>
   );
 };
