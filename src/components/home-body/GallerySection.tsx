@@ -10,7 +10,7 @@ import {
   Stack,
   useColorModeValue,
 } from "@chakra-ui/react";
-import { FaArrowRight } from "react-icons/fa";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 const GallerySection = () => {
   return (
@@ -67,6 +67,10 @@ const GallerySection = () => {
               </Heading>
             </Stack>
             <HStack spacing="3">
+              <Icon
+                color={useColorModeValue("red.500", "red.300")}
+                as={FaArrowLeft}
+              />
               <Link
                 color={useColorModeValue("red.500", "red.300")}
                 fontWeight="bold"
@@ -74,10 +78,6 @@ const GallerySection = () => {
               >
                 Discover now
               </Link>
-              <Icon
-                color={useColorModeValue("red.500", "red.300")}
-                as={FaArrowRight}
-              />
             </HStack>
           </Stack>
         </Box>

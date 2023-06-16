@@ -14,6 +14,7 @@ const HomePage = () => {
       templateColumns={"150px 1fr"}
       gap={1}
       fontWeight="bold"
+      maxW={"100%"}
     >
       <GridItem pl="2" area={"main"}>
         <ShopSection />
