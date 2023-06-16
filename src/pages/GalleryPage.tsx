@@ -53,7 +53,7 @@ const GalleryPage = () => {
     },
   ];
   return (
-    <Flex>
+    <Flex backgroundColor={"#ffffff"}>
       <ImageList sx={{ width: 500, height: 800 }} cols={3} rowHeight={164}>
         {itemData.map((item) => (
           <ImageListItem key={item.img}>

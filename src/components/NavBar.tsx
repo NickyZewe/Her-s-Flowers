@@ -10,6 +10,8 @@ import {
   MenuItem,
   MenuList,
   Spacer,
+  Button,
+  useColorMode,
 } from "@chakra-ui/react";
 import { FaInstagram } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
@@ -25,9 +27,15 @@ const NavBar = () => {
       m={0}
     >
       <Menu>
-        <MenuButton as={IconButton} icon={<HamburgerIcon />} color="gray.50" />
+        <MenuButton
+          as={IconButton}
+          icon={<HamburgerIcon />}
+          color="gray.50"
+          backgroundColor={"#ff8acb"}
+          outlineColor={"gray.50"}
+        />
 
-        <MenuList color="gray.50">
+        <MenuList color="#ff8acb" backgroundColor={"#ff8acb"}>
           <NavLink to={"/"}>
             <MenuItem>Home</MenuItem>
           </NavLink>
@@ -56,9 +64,11 @@ const NavBar = () => {
         <IconButton
           ml={2}
           aria-label="Instagram Link"
-          color="gray.50"
           isRound
           icon={<FaInstagram />}
+          color="gray.50"
+          backgroundColor={"#ff8acb"}
+          outlineColor={"gray.50"}
         ></IconButton>
       </Link>
     </Flex>

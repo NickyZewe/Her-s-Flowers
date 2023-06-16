@@ -1,12 +1,5 @@
-import {
-  ButtonGroup,
-  Container,
-  Flex,
-  IconButton,
-  Stack,
-  Text,
-} from "@chakra-ui/react";
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { ButtonGroup, Flex, IconButton, Stack, Text } from "@chakra-ui/react";
+import { FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { Logo } from "./Logo";
 
 const Footer = () => {
@@ -25,14 +18,8 @@ const Footer = () => {
             <IconButton
               as="a"
               href="#"
-              aria-label="LinkedIn"
-              icon={<FaLinkedin fontSize="1.25rem" />}
-            />
-            <IconButton
-              as="a"
-              href="#"
-              aria-label="GitHub"
-              icon={<FaGithub fontSize="1.25rem" />}
+              aria-label="Instagram"
+              icon={<FaInstagram fontSize="1.25rem" />}
             />
             <IconButton
               as="a"
@@ -43,7 +30,7 @@ const Footer = () => {
           </ButtonGroup>
         </Stack>
         <Text fontSize="sm" color="fg.subtle">
-          &copy; {new Date().getFullYear()} Chakra UI Pro, Inc. All rights
+          &copy; {new Date().getFullYear()} Her's Floral Design. All rights
           reserved.
         </Text>
       </Stack>
