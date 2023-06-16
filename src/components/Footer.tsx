@@ -1,6 +1,7 @@
 import {
   ButtonGroup,
   Container,
+  Flex,
   IconButton,
   Stack,
   Text,
@@ -10,7 +11,13 @@ import { Logo } from "./Logo";
 
 const Footer = () => {
   return (
-    <Container as="footer" role="contentinfo" py={{ base: "12", md: "16" }}>
+    <Flex
+      p={5}
+      h="1fr"
+      overflow={"hidden"}
+      w="100%"
+      backgroundColor={"#ff8acb"}
+    >
       <Stack spacing={{ base: "4", md: "5" }}>
         <Stack justify="space-between" direction="row" align="center">
           <Logo />
@@ -40,7 +47,7 @@ const Footer = () => {
           reserved.
         </Text>
       </Stack>
-    </Container>
+    </Flex>
   );
 };
 

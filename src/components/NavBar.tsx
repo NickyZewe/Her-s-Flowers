@@ -16,7 +16,14 @@ import { NavLink } from "react-router-dom";
 
 const NavBar = () => {
   return (
-    <Flex p={5} h="1fr" overflow={"hidden"}>
+    <Flex
+      p={5}
+      h="1fr"
+      overflow={"hidden"}
+      w="100%"
+      backgroundColor={"#ff8acb"}
+      m={0}
+    >
       <Menu>
         <MenuButton as={IconButton} icon={<HamburgerIcon />} color="gray.50" />
 

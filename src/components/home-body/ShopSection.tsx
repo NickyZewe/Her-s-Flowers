@@ -34,14 +34,6 @@ const ShopSection = () => {
             objectFit="cover"
             flex="1"
           />
-          <Image
-            display={{ base: "none", sm: "initial" }}
-            src="https://images.unsplash.com/photo-1589156206699-bc21e38c8a7d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=772&q=80"
-            alt="Lovely Image"
-            fallback={<Skeleton />}
-            maxH="450px"
-            objectFit="cover"
-          />
         </Flex>
         <Box
           width={{ lg: "sm" }}
