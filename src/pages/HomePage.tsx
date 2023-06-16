@@ -15,12 +15,12 @@ const HomePage = () => {
       gap={1}
       fontWeight="bold"
       maxW={"100%"}
+      backgroundColor={"#ffffff"}
     >
-      <GridItem pl="2" area={"main"}>
+      <GridItem area={"main"} px={"5"}>
         <ShopSection />
         <GallerySection />
         <EventSection />
-        <AboutSection />
       </GridItem>
     </Grid>
   );
