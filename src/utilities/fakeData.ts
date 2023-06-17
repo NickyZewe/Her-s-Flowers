@@ -39,7 +39,7 @@ export const images = [
       price: 199,
       flag: 'new',
       imageUrl:
-        '../../public/images/Picture1.png',
+        '/images/Picture1.png?w=164&h=164&fit=crop&auto=format',
       rating: 4,
       ratingCount: 1,
       description:
@@ -54,7 +54,7 @@ export const images = [
       salePrice: 179.99,
       flag: 'on-sale',
       imageUrl:
-      "../../public/images/Picture6.png",
+      "/images/Picture6.png?w=164&h=164&fit=crop&auto=format",
       rating: 4,
       ratingCount: 12,
       description:
@@ -67,7 +67,7 @@ export const images = [
       currency: 'USD',
       price: 199,
       imageUrl:
-        '"../../public/images/Picture7.png',
+        '/images/Picture7.png?w=164&h=164&fit=crop&auto=format',
       rating: 4,
       ratingCount: 12,
       description:
@@ -80,7 +80,7 @@ export const images = [
       currency: 'GBP',
       price: 199,
       imageUrl:
-        '../../public/images/Picture1.png',
+        '/images/Picture1.png?w=164&h=164&fit=crop&auto=format',
       rating: 5,
       ratingCount: 1,
       description:

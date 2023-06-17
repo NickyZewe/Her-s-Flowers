@@ -51,10 +51,7 @@ const GallerySection = () => {
         >
           <Stack spacing={{ base: "8", lg: "10" }}>
             <Stack spacing={{ base: "2", lg: "4" }}>
-              <Heading
-                size="xl"
-                color={useColorModeValue("pink.500", "pink.300")}
-              >
+              <Heading size="xl" color={"#ff8acb"}>
                 Gallery
               </Heading>
               <Heading size="xl" fontWeight="normal">
@@ -62,15 +59,8 @@ const GallerySection = () => {
               </Heading>
             </Stack>
             <HStack spacing="3">
-              <Icon
-                color={useColorModeValue("red.500", "red.300")}
-                as={FaArrowLeft}
-              />
-              <Link
-                color={useColorModeValue("red.500", "red.300")}
-                fontWeight="bold"
-                fontSize="lg"
-              >
+              <Icon color={"#ff8acb"} as={FaArrowLeft} />
+              <Link color={"#ff8acb"} fontWeight="bold" fontSize="lg">
                 Discover now
               </Link>
             </HStack>

@@ -5,6 +5,7 @@ import Layout from "./pages/Layout";
 import ShopPage from "./pages/ShopPage";
 import GalleryPage from "./pages/GalleryPage";
 import CartPage from "./pages/CartPage";
+import EventPage from "./pages/EventPage";
 
 const router = createBrowserRouter([
   {
@@ -13,9 +14,10 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       { index: true, element: <HomePage /> },
-      { path: "/shop", element: <ShopPage /> },
-      { path: "/gallery", element: <GalleryPage /> },
-      { path: "/cart", element: <CartPage /> },
+      { path: "shop", element: <ShopPage /> },
+      { path: "gallery", element: <GalleryPage /> },
+      { path: "cart", element: <CartPage /> },
+      { path: "events", element: <EventPage /> },
     ],
   },
 ]);

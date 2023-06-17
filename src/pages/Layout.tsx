@@ -1,7 +1,7 @@
-import { Box, Flex, Grid, Spacer, VStack } from "@chakra-ui/react";
+import { Box, Flex, Spacer, VStack } from "@chakra-ui/react";
 import { Outlet } from "react-router-dom";
-import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
+import NavBar from "../components/NavBar";
 
 const Layout = () => {
   return (

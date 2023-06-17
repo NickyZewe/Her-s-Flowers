@@ -51,10 +51,7 @@ const EventSection = () => {
         >
           <Stack spacing={{ base: "8", lg: "10" }}>
             <Stack spacing={{ base: "2", lg: "4" }}>
-              <Heading
-                size="xl"
-                color={useColorModeValue("red.500", "red.300")}
-              >
+              <Heading size="xl" color={"#ff8acb"}>
                 Events
               </Heading>
               <Heading size="xl" fontWeight="normal">
@@ -63,17 +60,10 @@ const EventSection = () => {
               </Heading>
             </Stack>
             <HStack spacing="3">
-              <Link
-                color={useColorModeValue("red.500", "red.300")}
-                fontWeight="bold"
-                fontSize="lg"
-              >
+              <Link color={"#ff8acb"} fontWeight="bold" fontSize="lg">
                 Inquire about an event
               </Link>
-              <Icon
-                color={useColorModeValue("red.500", "red.300")}
-                as={FaArrowRight}
-              />
+              <Icon color={"#ff8acb"} as={FaArrowRight} />
             </HStack>
           </Stack>
         </Box>
