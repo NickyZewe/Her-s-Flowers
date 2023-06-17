@@ -2,19 +2,15 @@ import {
   AspectRatio,
   Box,
   Button,
-  HStack,
   Image,
-  Link,
   Skeleton,
   Stack,
   StackProps,
   Text,
   useColorModeValue,
 } from "@chakra-ui/react";
-import { Rating } from "./Rating";
-import { FavouriteButton } from "./FavoriteButton";
-import { PriceTag } from "./PriceTag";
 import { Product } from "../utilities/fakeData";
+import { PriceTag } from "./PriceTag";
 
 interface Props {
   product: Product;
@@ -36,12 +32,6 @@ export const ProductCard = (props: Props) => {
             borderRadius={{ base: "md", md: "xl" }}
           />
         </AspectRatio>
-        <FavouriteButton
-          position="absolute"
-          top="4"
-          right="4"
-          aria-label={`Add ${name} to your favourites`}
-        />
       </Box>
       <Stack>
         <Stack spacing="1">
@@ -53,24 +43,11 @@ export const ProductCard = (props: Props) => {
           </Text>
           <PriceTag price={price} salePrice={salePrice} currency="USD" />
         </Stack>
-        <HStack>
-          <Rating defaultValue={rating} size="sm" />
-          <Text fontSize="sm" color={useColorModeValue("gray.600", "gray.400")}>
-            12 Reviews
-          </Text>
-        </HStack>
       </Stack>
       <Stack align="center">
-        <Button colorScheme="blue" width="full">
+        <Button colorScheme="cyan" width="full">
           Add to cart
         </Button>
-        <Link
-          textDecoration="underline"
-          fontWeight="medium"
-          color={useColorModeValue("gray.600", "gray.400")}
-        >
-          Quick shop
-        </Link>
       </Stack>
     </Stack>
   );

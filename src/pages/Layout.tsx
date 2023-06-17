@@ -5,11 +5,11 @@ import Footer from "../components/Footer";
 
 const Layout = () => {
   return (
-    <Flex alignItems={"top"} py={0} justifyContent={"center"}>
+    <Flex direction="column" flex="1">
       <VStack spacing={0}>
         <NavBar />
         <Spacer />
-        <Box>
+        <Box h={"100%"}>
           <Outlet />
         </Box>
         <Footer />

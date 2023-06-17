@@ -26,13 +26,16 @@ const ShopSection = () => {
       >
         <Flex flex="1" overflow="hidden">
           <Image
-            src="https://images.unsplash.com/photo-1589156229687-496a31ad1d1f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=772&q=80"
+            src="/images/Picture11.png?w=164&h=164&fit=crop&auto=format"
             alt="Lovely Image"
             fallback={<Skeleton />}
             maxH="450px"
             minW="300px"
             objectFit="cover"
             flex="1"
+            borderRadius={100}
+            border={"8px"}
+            borderColor={"#ff8acb"}
           />
         </Flex>
         <Box

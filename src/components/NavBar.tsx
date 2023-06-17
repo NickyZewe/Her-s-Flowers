@@ -1,20 +1,19 @@
 import { HamburgerIcon } from "@chakra-ui/icons";
 import {
-  Box,
   Flex,
   Heading,
   IconButton,
-  Menu,
   Link,
+  Menu,
   MenuButton,
   MenuItem,
   MenuList,
   Spacer,
-  Button,
-  useColorMode,
 } from "@chakra-ui/react";
 import { FaInstagram } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
+import { IoFlowerOutline } from "react-icons/io5";
+import { RiHandbagLine } from "react-icons/ri";
 
 const NavBar = () => {
   return (
@@ -29,27 +28,37 @@ const NavBar = () => {
       <Menu>
         <MenuButton
           as={IconButton}
-          icon={<HamburgerIcon />}
+          icon={<IoFlowerOutline />}
           color="gray.50"
           backgroundColor={"#ff8acb"}
           outlineColor={"gray.50"}
         />
 
-        <MenuList color="#ff8acb" backgroundColor={"#ff8acb"}>
+        <MenuList backgroundColor={"#ff8acb"}>
           <NavLink to={"/"}>
-            <MenuItem>Home</MenuItem>
+            <MenuItem backgroundColor={"#ff8acb"} color="gray.50">
+              Home
+            </MenuItem>
           </NavLink>
           <NavLink to={"/shop"}>
-            <MenuItem>Shop</MenuItem>
+            <MenuItem backgroundColor={"#ff8acb"} color="gray.50">
+              Shop
+            </MenuItem>
           </NavLink>
           <NavLink to={"/gallery"}>
-            <MenuItem>Gallery</MenuItem>
+            <MenuItem backgroundColor={"#ff8acb"} color="gray.50">
+              Gallery
+            </MenuItem>
           </NavLink>
           <NavLink to={"/events"}>
-            <MenuItem>Inquire About an Event</MenuItem>
+            <MenuItem backgroundColor={"#ff8acb"} color="gray.50">
+              Inquire About an Event
+            </MenuItem>
           </NavLink>
           <NavLink to={"/about"}>
-            <MenuItem>Get To Know Her's</MenuItem>
+            <MenuItem backgroundColor={"#ff8acb"} color="gray.50">
+              Get To Know Her's
+            </MenuItem>
           </NavLink>
         </MenuList>
       </Menu>
@@ -71,6 +80,16 @@ const NavBar = () => {
           outlineColor={"gray.50"}
         ></IconButton>
       </Link>
+
+      <IconButton
+        ml={4}
+        aria-label="Cart"
+        isRound
+        icon={<RiHandbagLine />}
+        color="gray.50"
+        backgroundColor={"#ff8acb"}
+        outlineColor={"gray.50"}
+      ></IconButton>
     </Flex>
   );
 };
