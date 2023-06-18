@@ -32,7 +32,7 @@ const EventPage = () => {
           the form below and someone will be in touch with you within 48 hours.
           If you just want to order a single arrangement for delivery or pickup,
           place your order through our web shop. For all other inquiries email
-          us at .
+          us at EMAILHERE.
         </Text>
         <Box border={"solid"} borderColor={"#c7c7c7"} p={5} borderRadius={20}>
           <VStack justify={"center"} align={"left"}>

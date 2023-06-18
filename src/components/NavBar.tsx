@@ -36,7 +36,7 @@ const NavBar = () => {
           outlineColor={"gray.50"}
         />
 
-        <MenuList backgroundColor={"#e2629d"}>
+        <MenuList backgroundColor={"#e2629d"} fontFamily={"open-sans"}>
           <NavLink to={"/"}>
             <MenuItem backgroundColor={"#e2629d"} color="gray.50">
               Home
@@ -85,18 +85,6 @@ const NavBar = () => {
           outlineColor={"gray.50"}
         ></IconButton>
       </Link>
-      <NavLink to={"/cart"}>
-        <IconButton
-          ml={10}
-          aria-label="Cart"
-          isRound
-          icon={<RiHandbagLine />}
-          fontSize={"2xl"}
-          color="gray.50"
-          backgroundColor={"#e2629d"}
-          outlineColor={"gray.50"}
-        ></IconButton>
-      </NavLink>
     </Flex>
   );
 };

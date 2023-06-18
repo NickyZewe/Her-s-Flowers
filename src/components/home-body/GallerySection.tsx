@@ -61,7 +61,7 @@ const GallerySection = () => {
                 fontWeight="normal"
                 fontFamily={"open-sans"}
               >
-                Refresh your wardrobe
+                See our latest work
               </Heading>
             </Stack>
             <HStack spacing="3">

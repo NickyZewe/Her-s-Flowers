@@ -7,9 +7,10 @@ import {
   Stack,
   StackProps,
   Text,
+  Link,
   useColorModeValue,
 } from "@chakra-ui/react";
-import { Product } from "../utilities/fakeData";
+import { Product } from "../utilities/productData";
 import { PriceTag } from "./PriceTag";
 
 interface Props {
@@ -19,7 +20,7 @@ interface Props {
 
 export const ProductCard = (props: Props) => {
   const { product, rootProps } = props;
-  const { name, imageUrl, price, salePrice, rating } = product;
+  const { name, imageUrl, price, link } = product;
   return (
     <Stack spacing={{ base: "4", md: "5" }} {...rootProps}>
       <Box position="relative">
@@ -41,13 +42,15 @@ export const ProductCard = (props: Props) => {
           >
             {name}
           </Text>
-          <PriceTag price={price} salePrice={salePrice} currency="USD" />
+          <PriceTag price={price} currency="USD" />
         </Stack>
       </Stack>
-      <Stack align="center">
-        <Button colorScheme="pink" width="full">
-          Add to cart
-        </Button>
+      <Stack align="left">
+        <Link href={product.link} isExternal>
+          <Button colorScheme="pink" width="full">
+            Buy Now
+          </Button>
+        </Link>
       </Stack>
     </Stack>
   );

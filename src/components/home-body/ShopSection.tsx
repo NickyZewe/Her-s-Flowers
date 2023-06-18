@@ -55,7 +55,8 @@ const ShopSection = () => {
                 Shop
               </Heading>
               <Heading size="xl" fontWeight="normal" fontFamily={"open-sans"}>
-                Refresh your wardrobe
+                We offer florals for private events, delivery, and branded
+                events.
               </Heading>
             </Stack>
             <HStack spacing="3">
@@ -64,6 +65,7 @@ const ShopSection = () => {
                 fontWeight="bold"
                 fontSize="lg"
                 fontFamily={"open-sans"}
+                href="/shop"
               >
                 Shop now
               </Link>
