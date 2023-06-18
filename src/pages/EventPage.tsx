@@ -59,16 +59,9 @@ const EventPage = () => {
                 <Input placeholder="Last name" />
               </FormControl>
             </HStack>
-            <FormControl isInvalid={isError}>
+            <FormControl isRequired>
               <FormLabel>Email</FormLabel>
               <Input type="email" value={input} onChange={handleInputChange} />
-              {!isError ? (
-                <FormHelperText>
-                  Enter the email you'd like to receive work email on.
-                </FormHelperText>
-              ) : (
-                <FormErrorMessage>Email is required.</FormErrorMessage>
-              )}
             </FormControl>
             <FormControl isRequired>
               <FormLabel>

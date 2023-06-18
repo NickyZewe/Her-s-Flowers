@@ -5,12 +5,13 @@ import {
   HStack,
   Icon,
   Image,
-  Link,
+  Text,
   Skeleton,
   Stack,
   useColorModeValue,
 } from "@chakra-ui/react";
 import { FaArrowLeft } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
 
 const GallerySection = () => {
   return (
@@ -54,15 +55,27 @@ const GallerySection = () => {
               <Heading size="xl" color={"#ff8acb"}>
                 Gallery
               </Heading>
-              <Heading size="xl" fontWeight="normal">
+              <Heading
+                as={"h2"}
+                size="xl"
+                fontWeight="normal"
+                fontFamily={"open-sans"}
+              >
                 Refresh your wardrobe
               </Heading>
             </Stack>
             <HStack spacing="3">
               <Icon color={"#ff8acb"} as={FaArrowLeft} />
-              <Link color={"#ff8acb"} fontWeight="bold" fontSize="lg">
-                Discover now
-              </Link>
+              <NavLink to={"/gallery"}>
+                <Text
+                  color={"#ff8acb"}
+                  fontWeight="bold"
+                  fontSize="lg"
+                  fontFamily={"open-sans"}
+                >
+                  Discover now
+                </Text>
+              </NavLink>
             </HStack>
           </Stack>
         </Box>

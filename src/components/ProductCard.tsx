@@ -45,7 +45,7 @@ export const ProductCard = (props: Props) => {
         </Stack>
       </Stack>
       <Stack align="center">
-        <Button colorScheme="cyan" width="full">
+        <Button colorScheme="pink" width="full">
           Add to cart
         </Button>
       </Stack>

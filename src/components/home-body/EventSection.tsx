@@ -5,12 +5,13 @@ import {
   HStack,
   Icon,
   Image,
-  Link,
+  Text,
   Skeleton,
   Stack,
   useColorModeValue,
 } from "@chakra-ui/react";
 import { FaArrowRight } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
 
 const EventSection = () => {
   return (
@@ -54,15 +55,22 @@ const EventSection = () => {
               <Heading size="xl" color={"#ff8acb"}>
                 Events
               </Heading>
-              <Heading size="xl" fontWeight="normal">
+              <Heading size="xl" fontWeight="normal" fontFamily={"open-sans"}>
                 We offer florals for private events such as weddings, elopements
                 and birthdays.
               </Heading>
             </Stack>
             <HStack spacing="3">
-              <Link color={"#ff8acb"} fontWeight="bold" fontSize="lg">
-                Inquire about an event
-              </Link>
+              <NavLink to={"/events"}>
+                <Text
+                  color={"#ff8acb"}
+                  fontWeight="bold"
+                  fontSize="lg"
+                  fontFamily={"open-sans"}
+                >
+                  Inquire about an event
+                </Text>
+              </NavLink>
               <Icon color={"#ff8acb"} as={FaArrowRight} />
             </HStack>
           </Stack>

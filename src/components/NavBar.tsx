@@ -1,7 +1,7 @@
-import { HamburgerIcon } from "@chakra-ui/icons";
 import {
   Flex,
   Heading,
+  Icon,
   IconButton,
   Link,
   Menu,
@@ -10,10 +10,11 @@ import {
   MenuList,
   Spacer,
 } from "@chakra-ui/react";
+import "@fontsource/dancing-script/600.css";
 import { FaInstagram } from "react-icons/fa";
-import { NavLink } from "react-router-dom";
 import { IoFlowerOutline } from "react-icons/io5";
 import { RiHandbagLine } from "react-icons/ri";
+import { NavLink } from "react-router-dom";
 
 const NavBar = () => {
   return (
@@ -22,51 +23,54 @@ const NavBar = () => {
       h="1fr"
       overflow={"hidden"}
       w="100%"
-      backgroundColor={"#ff8acb"}
+      backgroundColor={"#e2629d"}
       m={0}
     >
       <Menu>
         <MenuButton
           as={IconButton}
           icon={<IoFlowerOutline />}
+          fontSize={"3xl"}
           color="gray.50"
-          backgroundColor={"#ff8acb"}
+          backgroundColor={"#e2629d"}
           outlineColor={"gray.50"}
         />
 
-        <MenuList backgroundColor={"#ff8acb"}>
+        <MenuList backgroundColor={"#e2629d"}>
           <NavLink to={"/"}>
-            <MenuItem backgroundColor={"#ff8acb"} color="gray.50">
+            <MenuItem backgroundColor={"#e2629d"} color="gray.50">
               Home
             </MenuItem>
           </NavLink>
           <NavLink to={"/shop"}>
-            <MenuItem backgroundColor={"#ff8acb"} color="gray.50">
+            <MenuItem backgroundColor={"#e2629d"} color="gray.50">
               Shop
             </MenuItem>
           </NavLink>
           <NavLink to={"/gallery"}>
-            <MenuItem backgroundColor={"#ff8acb"} color="gray.50">
+            <MenuItem backgroundColor={"#e2629d"} color="gray.50">
               Gallery
             </MenuItem>
           </NavLink>
           <NavLink to={"/events"}>
-            <MenuItem backgroundColor={"#ff8acb"} color="gray.50">
+            <MenuItem backgroundColor={"#e2629d"} color="gray.50">
               Inquire About an Event
-            </MenuItem>
-          </NavLink>
-          <NavLink to={"/about"}>
-            <MenuItem backgroundColor={"#ff8acb"} color="gray.50">
-              Get To Know Her's
             </MenuItem>
           </NavLink>
         </MenuList>
       </Menu>
 
       <Spacer />
-      <Heading as="h3" size="lg" color="gray.50" paddingInline={2}>
+      <Heading
+        as="h1"
+        size={"2xl"}
+        color="gray.50"
+        paddingInline={2}
+        fontFamily={"Dancing Script"}
+      >
         Her's Floral Design
       </Heading>
+      <Icon as={IoFlowerOutline} color={"#ffffff"} fontSize={"2xl"} />
       <Spacer />
 
       <Link href="https://www.instagram.com/hersfloraldesign/" isExternal>
@@ -75,21 +79,24 @@ const NavBar = () => {
           aria-label="Instagram Link"
           isRound
           icon={<FaInstagram />}
+          fontSize={"2xl"}
           color="gray.50"
-          backgroundColor={"#ff8acb"}
+          backgroundColor={"#e2629d"}
           outlineColor={"gray.50"}
         ></IconButton>
       </Link>
-
-      <IconButton
-        ml={4}
-        aria-label="Cart"
-        isRound
-        icon={<RiHandbagLine />}
-        color="gray.50"
-        backgroundColor={"#ff8acb"}
-        outlineColor={"gray.50"}
-      ></IconButton>
+      <NavLink to={"/cart"}>
+        <IconButton
+          ml={10}
+          aria-label="Cart"
+          isRound
+          icon={<RiHandbagLine />}
+          fontSize={"2xl"}
+          color="gray.50"
+          backgroundColor={"#e2629d"}
+          outlineColor={"gray.50"}
+        ></IconButton>
+      </NavLink>
     </Flex>
   );
 };

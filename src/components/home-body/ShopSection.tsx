@@ -54,12 +54,17 @@ const ShopSection = () => {
               <Heading size="xl" color={"#ff8acb"}>
                 Shop
               </Heading>
-              <Heading size="xl" fontWeight="normal">
+              <Heading size="xl" fontWeight="normal" fontFamily={"open-sans"}>
                 Refresh your wardrobe
               </Heading>
             </Stack>
             <HStack spacing="3">
-              <Link color={"#ff8acb"} fontWeight="bold" fontSize="lg">
+              <Link
+                color={"#ff8acb"}
+                fontWeight="bold"
+                fontSize="lg"
+                fontFamily={"open-sans"}
+              >
                 Shop now
               </Link>
               <Icon color={"#ff8acb"} as={FaArrowRight} />
