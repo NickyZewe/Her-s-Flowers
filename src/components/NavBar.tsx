@@ -21,10 +21,11 @@ const NavBar = () => {
     <Flex
       p={5}
       h="1fr"
-      overflow={"hidden"}
+      overflow={"visible"}
       w="100%"
       backgroundColor={"#e2629d"}
       m={0}
+      position={"fixed"}
     >
       <Menu>
         <MenuButton
