@@ -5,12 +5,13 @@ import {
   HStack,
   Icon,
   Image,
-  Link,
+  Text,
   Skeleton,
   Stack,
   useColorModeValue,
 } from "@chakra-ui/react";
 import { FaArrowRight } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
 
 const ShopSection = () => {
   return (
@@ -60,15 +61,16 @@ const ShopSection = () => {
               </Heading>
             </Stack>
             <HStack spacing="3">
-              <Link
-                color={"#ff8acb"}
-                fontWeight="bold"
-                fontSize="lg"
-                fontFamily={"open-sans"}
-                href="/shop"
-              >
-                Shop now
-              </Link>
+              <NavLink to={"/shop"}>
+                <Text
+                  color={"#ff8acb"}
+                  fontWeight="bold"
+                  fontSize="lg"
+                  fontFamily={"open-sans"}
+                >
+                  Shop now
+                </Text>
+              </NavLink>
               <Icon color={"#ff8acb"} as={FaArrowRight} />
             </HStack>
           </Stack>
