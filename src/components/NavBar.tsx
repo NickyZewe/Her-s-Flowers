@@ -25,7 +25,6 @@ const NavBar = () => {
       w="100%"
       backgroundColor={"#e2629d"}
       m={0}
-      position={"fixed"}
     >
       <Menu>
         <MenuButton
