@@ -4,51 +4,51 @@ export const itemData = [
       title: "Flowers",
     },
     {
-      img: "../../public/images/Picture6.png",
+      img: "/images/Picture6.png",
       title: "Flowers",
     },
     {
-      img: "../../public/images/Picture7.png",
+      img: "/images/Picture7.png",
       title: "Flowers",
     },
     {
-      img: "../../public/images/Picture4.png",
+      img: "/images/Picture4.png",
       title: "Flowers",
     },
     {
-      img: "../../public/images/Picture5.png",
+      img: "/images/Picture5.png",
       title: "Flowers",
     },
     {
-      img: "../../public/images/Picture8.png",
+      img: "/images/Picture8.png",
       title: "Flowers",
     },
     {
-      img: "../../public/images/Picture9.png",
+      img: "/images/Picture9.png",
       title: "Flowers",
     },
     {
-      img: "../../public/images/Picture10.png",
+      img: "/images/Picture10.png",
       title: "Flowers",
     },
     {
-      img: "../../public/images/Picture15.png",
+      img: "/images/Picture15.png",
       title: "Flowers",
     },
     {
-      img: "../../public/images/Picture16.png",
+      img: "/images/Picture16.png",
       title: "Flowers",
     },
     {
-      img: "../../public/images/Picture17.png",
+      img: "/images/Picture17.png",
       title: "Flowers",
     },
     {
-      img: "../../public/images/Picture18.png",
+      img: "/images/Picture18.png",
       title: "Flowers",
     },
     {
-      img: "../../public/images/Picture19.png",
+      img: "/images/Picture19.png",
       title: "Flowers",
     },
   ];
