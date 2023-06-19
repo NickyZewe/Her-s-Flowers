@@ -1,6 +1,6 @@
 export const itemData = [
     {
-      img: "/public/images/Picture1.png",
+      img: "/images/Picture11.png?w=164&h=164&fit=crop&auto=format",
       title: "Flowers",
     },
     {
