@@ -1,6 +1,5 @@
 import {
   Box,
-  Button,
   Flex,
   FormControl,
   FormLabel,
@@ -10,14 +9,16 @@ import {
   Text,
   VStack,
 } from "@chakra-ui/react";
-import { SetStateAction, useState } from "react";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const EventPage = () => {
-  const [input, setInput] = useState("");
   const [result, setResult] = useState("");
+  const navigate = useNavigate();
 
   const onSubmit = async (event: any) => {
     event.preventDefault();
+
     setResult("Sending....");
     const formData = new FormData(event.target);
 
@@ -29,6 +30,7 @@ const EventPage = () => {
     }).then((res) => res.json());
 
     if (res.success) {
+      navigate("/success");
       console.log("Success", res);
       setResult(res.message);
     } else {
@@ -36,9 +38,6 @@ const EventPage = () => {
       setResult(res.message);
     }
   };
-  const handleInputChange = (e: {
-    target: { value: SetStateAction<string> };
-  }) => setInput(e.target.value);
 
   return (
     <Flex px={10} py={5}>
@@ -66,6 +65,7 @@ const EventPage = () => {
               flowers through our web shop!
             </Text>
             <Text>Thank you and we look forward to hearing from you!</Text>
+
             <form
               action="https://api.web3forms.com/submit"
               method="POST"
@@ -80,46 +80,42 @@ const EventPage = () => {
 
               <FormControl isRequired>
                 <FormLabel pt={5}>First name</FormLabel>
-                <Input placeholder="First name" />
-                <FormLabel pt={5}>Last name</FormLabel>
-                <Input placeholder="Last name" />
-                <FormLabel pt={5}>Email</FormLabel>
                 <Input
-                  type="email"
-                  value={input}
-                  onChange={handleInputChange}
+                  placeholder="First name"
+                  type="text"
+                  name=" First name"
                 />
+                <FormLabel pt={5}>Last name</FormLabel>
+                <Input placeholder="Last name" type="text" name=" Last name" />
+                <FormLabel pt={5}>Email</FormLabel>
+                <Input placeholder="Email" type="email" name="email" />
                 <FormLabel pt={5}>
                   Describe Your Event (What type of event? Where is event taking
                   place? Is there a style you have in mind?)
                 </FormLabel>
-                <Input placeholder="Describe Your Event" />
+                <Input
+                  placeholder="Describe Your Event"
+                  type="text"
+                  name="Event Description"
+                />
                 <FormLabel pt={5}>
                   Event Date (If date TBD, please put potential date)
                 </FormLabel>
                 <Input />
                 <FormLabel pt={5}>Event Floral Budget</FormLabel>
-                <Select placeholder="Please Select">
-                  <option value="option1">$500 - $800</option>
-                  <option value="option2">$800 - $1,000</option>
-                  <option value="option3">$1,000 - $1,500</option>
-                  <option value="option4">$1,500 - $2,000</option>
-                  <option value="option5">$2,500 - $3,000</option>
-                  <option value="option6">$3,000 - $4,000</option>
-                  <option value="option7">$4,000 - $5,000</option>
-                  <option value="option8">$5,000+</option>
+                <Select pb={5} placeholder="Please Select" name="Budget Range">
+                  <option value="$500 - $800">$500 - $800</option>
+                  <option value="$800 - $1,000">$800 - $1,000</option>
+                  <option value="$1,000 - $1,500">$1,000 - $1,500</option>
+                  <option value="1,500 - $2,000">$1,500 - $2,000</option>
+                  <option value="$2,500 - $3,000">$2,500 - $3,000</option>
+                  <option value="$3,000 - $4,000">$3,000 - $4,000</option>
+                  <option value="$4,000 - $5,000">$4,000 - $5,000</option>
+                  <option value="$5,000+">$5,000+</option>
                 </Select>
               </FormControl>
-              <div className="h-captcha" data-captcha="true"></div>
+              <Input type="submit" />
             </form>
-            <Button
-              loadingText="Submitting"
-              colorScheme="teal"
-              variant="outline"
-              type="submit"
-            >
-              Submit Form
-            </Button>
           </VStack>
         </Box>
       </VStack>

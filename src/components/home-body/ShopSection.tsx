@@ -65,13 +65,12 @@ const ShopSection = () => {
                 <Text
                   color={"#ff8acb"}
                   fontWeight="bold"
-                  fontSize="lg"
+                  fontSize="2xl"
                   fontFamily={"open-sans"}
                 >
                   Shop now
                 </Text>
               </NavLink>
-              <Icon color={"#ff8acb"} as={FaArrowRight} />
             </HStack>
           </Stack>
         </Box>

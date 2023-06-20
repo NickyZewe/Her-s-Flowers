@@ -1,5 +1,7 @@
 import {
+  Box,
   Flex,
+  HStack,
   Heading,
   Icon,
   IconButton,
@@ -59,20 +61,24 @@ const NavBar = () => {
           </NavLink>
         </MenuList>
       </Menu>
-
       <Spacer />
-      <Heading
-        as="h1"
-        size={"2xl"}
-        color="gray.50"
-        paddingInline={2}
-        fontFamily={"Dancing Script"}
-      >
-        Her's Floral Design
-      </Heading>
-      <Icon as={IoFlowerOutline} color={"#ffffff"} fontSize={"2xl"} />
+      <Box>
+        <HStack>
+          <NavLink to={"/"}>
+            <Heading
+              as="h1"
+              size={"2xl"}
+              color="gray.50"
+              paddingInline={2}
+              fontFamily={"Dancing Script"}
+            >
+              Her's Floral Design
+              <Icon as={IoFlowerOutline} color={"#ffffff"} fontSize={"2xl"} />
+            </Heading>
+          </NavLink>
+        </HStack>
+      </Box>
       <Spacer />
-
       <Link href="https://www.instagram.com/hersfloraldesign/" isExternal>
         <IconButton
           ml={2}

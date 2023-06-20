@@ -65,12 +65,11 @@ const GallerySection = () => {
               </Heading>
             </Stack>
             <HStack spacing="3">
-              <Icon color={"#ff8acb"} as={FaArrowLeft} />
               <NavLink to={"/gallery"}>
                 <Text
                   color={"#ff8acb"}
                   fontWeight="bold"
-                  fontSize="lg"
+                  fontSize="2xl"
                   fontFamily={"open-sans"}
                 >
                   Discover now

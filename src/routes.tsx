@@ -5,6 +5,7 @@ import Layout from "./pages/Layout";
 import ShopPage from "./pages/ShopPage";
 import GalleryPage from "./pages/GalleryPage";
 import EventPage from "./pages/EventPage";
+import SuccessPage from "./pages/SuccessPage";
 
 const router = createBrowserRouter([
   {
@@ -16,6 +17,7 @@ const router = createBrowserRouter([
       { path: "shop", element: <ShopPage /> },
       { path: "gallery", element: <GalleryPage /> },
       { path: "events", element: <EventPage /> },
+      { path: "success", element: <SuccessPage /> },
     ],
   },
 ]);
