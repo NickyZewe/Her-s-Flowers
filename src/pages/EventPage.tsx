@@ -1,5 +1,6 @@
 import {
   Box,
+  Button,
   Flex,
   FormControl,
   FormLabel,
@@ -22,7 +23,7 @@ const EventPage = () => {
     setResult("Sending....");
     const formData = new FormData(event.target);
 
-    formData.append("access_key", "77dc8782-caad-4f1d-87e6-d0bb92dd6509");
+    formData.append("access_key", "7afbb6fd-5362-4c43-8b5d-5034b605f38c");
 
     const res = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
@@ -74,8 +75,7 @@ const EventPage = () => {
               <input
                 type="hidden"
                 name="access_key"
-                value="77dc8782-caad-4f1d-87e6-d0bb92dd6509
-"
+                value="7afbb6fd-5362-4c43-8b5d-5034b605f38c"
               />
 
               <FormControl isRequired>
