@@ -27,6 +27,7 @@ const NavBar = () => {
       w="100%"
       backgroundColor={"#e2629d"}
       m={0}
+      justify={"center"}
     >
       <Menu>
         <MenuButton
@@ -36,6 +37,8 @@ const NavBar = () => {
           color="gray.50"
           backgroundColor={"#e2629d"}
           outlineColor={"gray.50"}
+          m={1}
+          mr={3}
         />
 
         <MenuList
@@ -75,7 +78,6 @@ const NavBar = () => {
             color="gray.50"
             paddingInline={2}
             fontFamily={"Dancing Script"}
-            flexWrap="nowrap"
           >
             Her's Floral Design
             <Icon as={IoFlowerOutline} color={"#ffffff"} fontSize={"2xl"} />
@@ -86,7 +88,7 @@ const NavBar = () => {
       <Spacer />
       <Link href="https://www.instagram.com/hersfloraldesign/" isExternal>
         <IconButton
-          ml={2}
+          m={1}
           aria-label="Instagram Link"
           isRound
           icon={<FaInstagram />}
