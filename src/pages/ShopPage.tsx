@@ -36,6 +36,7 @@ const ShopPage = () => {
             fontFamily={"open-sans"}
             fontSize={"28px"}
             p={5}
+            textAlign={"justify"}
           >
             To purchase a combination of the listed products{" "}
             <Link
