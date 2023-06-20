@@ -39,9 +39,8 @@ const EventSection = () => {
         </Flex>
         <Box
           width={{ lg: "sm" }}
-          transform={{ base: "translateY(-50%)", lg: "none" }}
           bg={{
-            base: useColorModeValue("red.50", "gray.700"),
+            base: "#ffffff",
             lg: "transparent",
           }}
           mx={{ base: "6", md: "8", lg: "0" }}
