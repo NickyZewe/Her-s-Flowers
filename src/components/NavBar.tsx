@@ -66,22 +66,23 @@ const NavBar = () => {
         </MenuList>
       </Menu>
       <Spacer />
-      <Box>
-        <HStack>
-          <NavLink to={"/"}>
-            <Heading
-              as="h1"
-              size={"2xl"}
-              color="gray.50"
-              paddingInline={2}
-              fontFamily={"Dancing Script"}
-            >
-              Her's Floral Design
-              <Icon as={IoFlowerOutline} color={"#ffffff"} fontSize={"2xl"} />
-            </Heading>
-          </NavLink>
-        </HStack>
-      </Box>
+
+      <HStack>
+        <NavLink to={"/"}>
+          <Heading
+            as="h1"
+            size={"2xl"}
+            color="gray.50"
+            paddingInline={2}
+            fontFamily={"Dancing Script"}
+            flexWrap="nowrap"
+          >
+            Her's Floral Design
+            <Icon as={IoFlowerOutline} color={"#ffffff"} fontSize={"2xl"} />
+          </Heading>
+        </NavLink>
+      </HStack>
+
       <Spacer />
       <Link href="https://www.instagram.com/hersfloraldesign/" isExternal>
         <IconButton

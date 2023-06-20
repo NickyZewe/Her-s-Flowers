@@ -25,7 +25,7 @@ const ShopSection = () => {
         direction={{ base: "column", lg: "row-reverse" }}
         spacing={{ base: "0", lg: "20" }}
       >
-        <Flex flex="1" overflow="hidden">
+        <Flex flex="1" overflow={"hidden"}>
           <Image
             src="/images/Picture11.png?w=164&h=164&fit=crop&auto=format"
             alt="Lovely Image"
@@ -41,9 +41,8 @@ const ShopSection = () => {
         </Flex>
         <Box
           width={{ lg: "sm" }}
-          transform={{ base: "translateY(-50%)", lg: "none" }}
           bg={{
-            base: useColorModeValue("red.50", "gray.700"),
+            base: "#ffffff",
             lg: "transparent",
           }}
           mx={{ base: "6", md: "8", lg: "0" }}
