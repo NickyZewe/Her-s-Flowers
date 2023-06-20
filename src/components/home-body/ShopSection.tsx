@@ -55,7 +55,12 @@ const ShopSection = () => {
               <Heading size="xl" color={"#ff8acb"}>
                 Shop
               </Heading>
-              <Heading size="xl" fontWeight="normal" fontFamily={"open-sans"}>
+              <Heading
+                size="xl"
+                fontWeight="normal"
+                fontFamily={"open-sans"}
+                color={"black"}
+              >
                 We offer florals for private events, delivery, and branded
                 events.
               </Heading>

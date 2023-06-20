@@ -5,7 +5,7 @@ import NavBar from "../components/NavBar";
 
 const Layout = () => {
   return (
-    <Flex direction="column" flex="1">
+    <Flex direction="column" flex="1" backgroundColor={"#ffffff"}>
       <VStack spacing={0}>
         <NavBar />
         <Spacer />

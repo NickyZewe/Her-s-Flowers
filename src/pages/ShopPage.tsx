@@ -30,32 +30,32 @@ const ShopPage = () => {
               <ProductCard key={product.id} product={product} />
             ))}
           </ProductGrid>
-        </Box>
-        <HStack>
           <Text
             fontWeight="medium"
             color={"gray.700"}
             fontFamily={"open-sans"}
             fontSize={"28px"}
+            p={5}
           >
-            To purchase a combination of the listed products
+            To purchase a combination of the listed products{" "}
+            <Link
+              href="https://buy.stripe.com/test_aEUfZk8MV22b38k5ko"
+              isExternal
+            >
+              <Button
+                colorScheme="pink"
+                width="max-content"
+                textColor={"#ffffff"}
+                fontWeight={"bold"}
+                fontFamily={"open-sans"}
+                m={2}
+              >
+                Click Here
+              </Button>
+            </Link>
+            and adjust the quantity of each cart item.
           </Text>
-          <Link
-            href="https://buy.stripe.com/test_aEUfZk8MV22b38k5ko"
-            isExternal
-          >
-            <Button colorScheme="pink">Click Here</Button>
-          </Link>
-        </HStack>
-        <Text
-          fontWeight="medium"
-          color={"gray.700"}
-          fontFamily={"open-sans"}
-          fontSize={"28px"}
-          pb={10}
-        >
-          and adjust the quantity of each cart item.
-        </Text>
+        </Box>
       </VStack>
     </Flex>
   );

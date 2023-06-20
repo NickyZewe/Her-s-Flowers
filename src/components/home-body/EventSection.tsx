@@ -1,16 +1,14 @@
 import {
   Box,
   Flex,
-  Heading,
   HStack,
-  Icon,
+  Heading,
   Image,
-  Text,
   Skeleton,
   Stack,
+  Text,
   useColorModeValue,
 } from "@chakra-ui/react";
-import { FaArrowRight } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 
 const EventSection = () => {
@@ -55,7 +53,12 @@ const EventSection = () => {
               <Heading size="xl" color={"#ff8acb"}>
                 Events
               </Heading>
-              <Heading size="xl" fontWeight="normal" fontFamily={"open-sans"}>
+              <Heading
+                size="xl"
+                fontWeight="normal"
+                fontFamily={"open-sans"}
+                color={"black"}
+              >
                 We offer florals for private events such as weddings, elopements
                 and birthdays.
               </Heading>

@@ -26,7 +26,7 @@ const SuccessPage = () => {
           <NavLink to={"/"}>
             <Button
               colorScheme="pink"
-              fontWeight="bold"
+              fontWeight="light"
               fontSize="2xl"
               fontFamily={"open-sans"}
             >

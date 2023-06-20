@@ -60,6 +60,7 @@ const GallerySection = () => {
                 size="xl"
                 fontWeight="normal"
                 fontFamily={"open-sans"}
+                color={"black"}
               >
                 See our latest work
               </Heading>

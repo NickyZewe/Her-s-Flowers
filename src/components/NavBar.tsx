@@ -38,7 +38,11 @@ const NavBar = () => {
           outlineColor={"gray.50"}
         />
 
-        <MenuList backgroundColor={"#e2629d"} fontFamily={"open-sans"}>
+        <MenuList
+          backgroundColor={"#e2629d"}
+          fontFamily={"open-sans"}
+          fontSize={"lg"}
+        >
           <NavLink to={"/"}>
             <MenuItem backgroundColor={"#e2629d"} color="gray.50">
               Home

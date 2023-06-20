@@ -35,19 +35,20 @@ export const ProductCard = (props: Props) => {
         </AspectRatio>
       </Box>
       <Stack>
-        <Stack spacing="1">
-          <Text
-            fontWeight="medium"
-            color={useColorModeValue("gray.700", "gray.400")}
-          >
-            {name}
-          </Text>
+        <Stack spacing="1" color={"black"}>
+          <Text fontWeight="medium">{name}</Text>
           <PriceTag price={price} currency="USD" />
         </Stack>
       </Stack>
       <Stack align="left">
         <Link href={product.link} isExternal>
-          <Button colorScheme="pink" width="full">
+          <Button
+            colorScheme="pink"
+            width="full"
+            textColor={"#ffffff"}
+            fontWeight={"bold"}
+            fontFamily={"open-sans"}
+          >
             Buy Now
           </Button>
         </Link>

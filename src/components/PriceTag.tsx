@@ -63,7 +63,7 @@ const Price = (props: PriceProps) => {
     <Text
       as="span"
       fontWeight="medium"
-      color={color}
+      color={"black"}
       textDecoration={isOnSale ? "line-through" : "none"}
       {...textProps}
     >
@@ -73,10 +73,5 @@ const Price = (props: PriceProps) => {
 };
 
 const SalePrice = (props: TextProps) => (
-  <Text
-    as="span"
-    fontWeight="semibold"
-    color={mode("gray.800", "gray.100")}
-    {...props}
-  />
+  <Text as="span" fontWeight="semibold" color={"black"} {...props} />
 );
