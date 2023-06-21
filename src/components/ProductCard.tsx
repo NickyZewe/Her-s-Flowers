@@ -3,12 +3,11 @@ import {
   Box,
   Button,
   Image,
+  Link,
   Skeleton,
   Stack,
   StackProps,
-  Text,
-  Link,
-  useColorModeValue,
+  Text
 } from "@chakra-ui/react";
 import { Product } from "../utilities/productData";
 import { PriceTag } from "./PriceTag";

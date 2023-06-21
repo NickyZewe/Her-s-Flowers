@@ -15,7 +15,6 @@ import {
 import "@fontsource/dancing-script/600.css";
 import { FaInstagram } from "react-icons/fa";
 import { IoFlowerOutline } from "react-icons/io5";
-import { RiHandbagLine } from "react-icons/ri";
 import { NavLink } from "react-router-dom";
 
 const NavBar = () => {
