@@ -42,7 +42,7 @@ export const images = [
         '/images/Picture1.png?w=164&h=164&fit=crop&auto=format',
 
       images,
-      link: 'https://buy.stripe.com/test_eVa8wS7IReOX8sEbII'
+      link: 'https://buy.stripe.com/3csaIq6wI8zdgVy144'
 
     },
     {
@@ -56,7 +56,7 @@ export const images = [
       "/images/Picture6.png?w=164&h=164&fit=crop&auto=format",
     
       images,
-      link: 'https://buy.stripe.com/test_00gcN85AJ8qzgZa001'
+      link: 'https://buy.stripe.com/cN27we2gscPt7kY6op'
 
     },
     {
@@ -68,7 +68,7 @@ export const images = [
         '/images/Picture7.png?w=164&h=164&fit=crop&auto=format',
 
       images,
-      link: 'https://buy.stripe.com/test_6oEfZkbZ79uD10caEG'
+      link: 'https://buy.stripe.com/cN2g2KcV6g1F6gU8wy'
     },
     {
       id: '4',
@@ -79,7 +79,7 @@ export const images = [
         '/images/Picture1.png?w=164&h=164&fit=crop&auto=format',
 
       images,
-      link: 'https://buy.stripe.com/test_5kA7sO0gp22b8sEbIL'
+      link: 'https://buy.stripe.com/5kAbMu7AMeXBeNq9AD'
 
     },
    

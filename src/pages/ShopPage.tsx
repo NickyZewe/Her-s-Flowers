@@ -39,10 +39,7 @@ const ShopPage = () => {
             textAlign={"justify"}
           >
             To purchase a combination of the listed products{" "}
-            <Link
-              href="https://buy.stripe.com/test_aEUfZk8MV22b38k5ko"
-              isExternal
-            >
+            <Link href="https://buy.stripe.com/eVaeYGbR2g1F9t66os" isExternal>
               <Button
                 colorScheme="pink"
                 width="max-content"
