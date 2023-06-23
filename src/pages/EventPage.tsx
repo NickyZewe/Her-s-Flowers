@@ -114,7 +114,14 @@ const EventPage = () => {
                   <option value="$5,000+">$5,000+</option>
                 </Select>
               </FormControl>
-              <Input type="submit" />
+              <Input
+                type="submit"
+                _hover={{
+                  transform: "scale(1.03)",
+                  transition: "transform .15s ease-in",
+                  cursor: "pointer",
+                }}
+              />
             </form>
           </VStack>
         </Box>
