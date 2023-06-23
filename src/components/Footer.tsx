@@ -36,8 +36,8 @@ const Footer = () => {
           </HStack>
         </Stack>
         <Text fontSize="sm" color="#ffffff">
-          &copy; {new Date().getFullYear()} Her's Floral Design. All rights
-          reserved.
+          &copy; {new Date().getFullYear()} Nicholas Zewe Web Developement. All
+          rights reserved.
         </Text>
       </Stack>
     </Flex>
