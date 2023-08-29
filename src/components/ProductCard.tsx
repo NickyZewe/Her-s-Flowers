@@ -7,7 +7,7 @@ import {
   Skeleton,
   Stack,
   StackProps,
-  Text
+  Text,
 } from "@chakra-ui/react";
 import { Product } from "../utilities/productData";
 import { PriceTag } from "./PriceTag";

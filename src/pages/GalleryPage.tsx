@@ -18,7 +18,7 @@ const GalleryPage = () => {
               loading="lazy"
               p={5}
               borderRadius={60}
-            ></Image>
+            />
           ))}
         </SimpleGrid>
       </VStack>
