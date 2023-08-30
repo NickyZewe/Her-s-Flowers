@@ -79,6 +79,7 @@ const NavBar = () => {
               paddingInline={2}
               fontFamily={"Dancing Script"}
               overflowWrap={"inherit"}
+              alignItems={"center"}
             >
               Her's Floral Design
               <Icon as={IoFlowerOutline} color={"#ffffff"} fontSize={"2xl"} />
